@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Apostila do Aluno — Licitações e Lei de Responsabilidade Fiscal</title>
+<style>
+  @page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", Calibri, Arial, sans-serif; font-size: 9.3pt; line-height: 1.3; color: #1d2733; margin: 0; }
+  h1 { font-size: 17pt; color: #0f4c5c; margin: 0 0 6pt; padding-bottom: 4pt; border-bottom: 2.5pt solid #0f4c5c; break-after: avoid; }
+  h2 { font-size: 11pt; color: #0f4c5c; margin: 8pt 0 3pt; break-after: avoid; }
+  h3 { font-size: 10.5pt; margin: 9pt 0 3pt; color: #2b3a4a; break-after: avoid; }
+  p { margin: 3pt 0 5pt; }
+  ul, ol { margin: 2pt 0 6pt; padding-left: 16pt; }
+  li { margin: 1pt 0; }
+  table { width: 100%; border-collapse: collapse; margin: 3pt 0 6pt; font-size: 8.5pt; break-inside: avoid; }
+  th { background: #0f4c5c; color: #fff; text-align: left; padding: 3pt 5pt; font-weight: 600; }
+  td { border-bottom: 0.6pt solid #c9d3dc; padding: 2pt 4pt; vertical-align: top; }
+  tr:nth-child(even) td { background: #f3f6f8; }
+  .section { break-before: page; }
+  .box { border: 1pt solid #0f4c5c; border-left: 4pt solid #0f4c5c; background: #eef5f7; padding: 4pt 7pt; margin: 4pt 0 6pt; break-inside: avoid; }
+  .warn { border-color: #b5651d; border-left-color: #b5651d; background: #fbf3ea; }
+  .mt { border-color: #2f7d32; border-left-color: #2f7d32; background: #eef7ee; }
+  .tag { display: inline-block; font-size: 7.5pt; font-weight: 700; color: #fff; background: #2f7d32; padding: 0 4pt; border-radius: 2pt; vertical-align: 1pt; }
+  .flow { font-family: Consolas, "Courier New", monospace; font-size: 8.3pt; background: #f3f6f8; border: 0.6pt solid #c9d3dc; padding: 5pt 7pt; margin: 4pt 0 8pt; white-space: pre-wrap; break-inside: avoid; }
+  .num { font-weight: 700; color: #0f4c5c; }
+  .notes { border-top: 0.6pt solid #9aa8b5; margin-top: 10pt; }
+  .notes div { border-bottom: 0.6pt dotted #9aa8b5; height: 17pt; }
+  .cols { display: flex; gap: 10pt; }
+  .cols > div { flex: 1; }
+  .small { font-size: 8.5pt; color: #4a5866; }
+  /* capa */
+  .cover { height: 255mm; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+  .cover h1 { border: none; font-size: 26pt; line-height: 1.2; margin-bottom: 10pt; }
+  .cover .sub { font-size: 13pt; color: #2b3a4a; margin-bottom: 30pt; }
+  .cover table { width: 70%; margin: 0 auto 30pt; font-size: 10pt; }
+  .cover .field { width: 70%; margin: 6pt auto; text-align: left; border-bottom: 0.8pt solid #1d2733; padding-top: 14pt; font-size: 9pt; color: #4a5866; }
+  .toc li { margin: 2pt 0; }
+</style>
+</head>
+<body>
+
+<!-- ============ CAPA ============ -->
+<div class="cover">
+  <h1>Licitações e<br>Lei de Responsabilidade Fiscal</h1>
+  <div class="sub">Apostila de consulta rápida do aluno<br><span class="small">Lei 14.133/2021 · LC 101/2000 · legislação de Mato Grosso · valores atualizados para 2026</span></div>
+  <table>
+    <tr><th>Encontro</th><th>Data</th><th>Horário</th></tr>
+    <tr><td>1. Administração Pública, orçamento e fundamentos</td><td>Sáb 07/11</td><td>08h–17h</td></tr>
+    <tr><td>2. Fase preparatória</td><td>Dom 08/11</td><td>08h–11h</td></tr>
+    <tr><td>3. Fase externa, contratação direta, contratos e sanções</td><td>Sáb 28/11</td><td>08h–17h</td></tr>
+    <tr><td>4. Responsabilidade fiscal, controle e transparência</td><td>Dom 29/11</td><td>08h–11h</td></tr>
+  </table>
+  <div class="field">Nome:</div>
+  <div class="field">Órgão / empresa:</div>
+  <p class="small" style="margin-top:30pt">Prof. Renato Rosa · Material de apoio didático. Confira sempre o texto oficial das normas antes de citá-las.</p>
+</div>
+
+<!-- ============ SUMÁRIO ============ -->
+<div class="section">
+<h1>Sumário</h1>
+<ol class="toc">
+  <li>Administração Pública e orçamento</li>
+  <li>Fundamentos da licitação</li>
+  <li>Fase preparatória: planejar a contratação</li>
+  <li>Fase externa: do edital à homologação</li>
+  <li>Contratação direta</li>
+  <li>Contrato administrativo</li>
+  <li>Recursos, sanções e crimes</li>
+  <li>Lei de Responsabilidade Fiscal</li>
+  <li>Controle e transparência</li>
+  <li>Quadro-resumo: Mato Grosso</li>
+  <li>Comparativo: Lei 8.666/93 × Lei 14.133/21</li>
+  <li>Atividades do curso</li>
+  <li>Siglas e links úteis</li>
+</ol>
+
+<div class="box warn"><b>Atenção:</b> as Leis <b>8.666/93</b> (licitações), <b>10.520/02</b> (pregão) e o <b>RDC</b> (Lei 12.462/11) foram <b>revogados em 30/12/2023</b>. Para novos processos vale apenas a <b>Lei 14.133/2021</b>. As leis antigas só regem contratos antigos que ainda estão em execução.</div>
+
+<h2>Os números que você mais vai usar <span class="small">(Lei 14.133, valores de 2026, Decreto 12.807/2025)</span></h2>
+<table>
+  <tr><th>O quê</th><th>Valor / prazo</th><th>Base</th></tr>
+  <tr><td>Dispensa por valor: obras, serviços de engenharia, manutenção de veículos</td><td class="num">R$ 130.984,20</td><td>Art. 75, I</td></tr>
+  <tr><td>Dispensa por valor: demais compras e serviços</td><td class="num">R$ 65.492,11</td><td>Art. 75, II</td></tr>
+  <tr><td>Contrato verbal (pronto pagamento)</td><td class="num">até R$ 13.098,41</td><td>Art. 95, § 2º</td></tr>
+  <tr><td>Grande vulto: federal / <b>Estado de MT</b></td><td class="num">R$ 261.968.421,04 / R$ 50 milhões</td><td>Art. 6º, XXII / Lei MT 12.148/23</td></tr>
+  <tr><td>Recurso / contrarrazões / pedido de reconsideração</td><td class="num">3 dias úteis</td><td>Art. 165</td></tr>
+  <tr><td>Impugnação do edital</td><td class="num">até 3 dias úteis antes da abertura</td><td>Art. 164</td></tr>
+  <tr><td>Alteração unilateral do contrato</td><td class="num">25% (reforma: 50% em acréscimos)</td><td>Art. 125</td></tr>
+  <tr><td>Garantia contratual</td><td class="num">até 5% (até 10% justificado)</td><td>Art. 98</td></tr>
+  <tr><td>Multa</td><td class="num">0,5% a 30% do contrato</td><td>Art. 156, § 3º</td></tr>
+  <tr><td>Impedimento / inidoneidade</td><td class="num">até 3 anos / 3 a 6 anos</td><td>Art. 156</td></tr>
+  <tr><td>Despesa com pessoal: Estados e Municípios</td><td class="num">60% da RCL</td><td>LRF, art. 19</td></tr>
+</table>
+</div>
+
+<!-- ============ 1 ============ -->
+<div class="section">
+<h1>1. Administração Pública e orçamento</h1>
+
+<h2>Administração direta × indireta (DL 200/67, art. 4º)</h2>
+<table>
+  <tr><th>Administração direta</th><th>Administração indireta</th></tr>
+  <tr><td>Entes políticos: União, Estados, DF e Municípios, e seus <b>órgãos</b>, que não têm personalidade jurídica</td><td><b>Entidades</b> com personalidade jurídica própria, criadas ou autorizadas por lei</td></tr>
+  <tr><td>Resulta da <b>desconcentração</b></td><td>Resulta da <b>descentralização</b></td></tr>
+  <tr><td>Ex.: SEDUC-MT, Secretaria Municipal de Saúde</td><td>Ex.: DETRAN-MT, UNEMAT, Banco do Brasil</td></tr>
+</table>
+
+<table>
+  <tr><th>Entidade</th><th>Regime</th><th>Criação (CF, 37, XIX)</th><th>Lei de licitações</th></tr>
+  <tr><td>Autarquia</td><td>Direito público</td><td>Criada por lei específica</td><td>Lei 14.133</td></tr>
+  <tr><td>Fundação pública</td><td>Público ou privado</td><td>Lei autoriza</td><td>Lei 14.133</td></tr>
+  <tr><td>Empresa pública</td><td>Privado, capital 100% público</td><td>Lei autoriza</td><td><b>Lei 13.303/16</b></td></tr>
+  <tr><td>Sociedade de economia mista</td><td>Privado, S.A., controle público</td><td>Lei autoriza</td><td><b>Lei 13.303/16</b></td></tr>
+</table>
+
+<div class="box"><b>Princípios da Administração (CF, art. 37; CE-MT, art. 129): LIMPE</b><br>
+<b>L</b>egalidade · <b>I</b>mpessoalidade · <b>M</b>oralidade · <b>P</b>ublicidade · <b>E</b>ficiência</div>
+
+<h2>Orçamento público (CF, art. 165)</h2>
+<table>
+  <tr><th>Instrumento</th><th>Vigência</th><th>Função</th></tr>
+  <tr><td><b>PPA</b>: Plano Plurianual</td><td>4 anos</td><td>Diretrizes, objetivos e metas de médio prazo</td></tr>
+  <tr><td><b>LDO</b>: Lei de Diretrizes Orçamentárias</td><td>Anual</td><td>Metas e prioridades; orienta a LOA; Anexos de Metas e de Riscos Fiscais (LRF, art. 4º)</td></tr>
+  <tr><td><b>LOA</b>: Lei Orçamentária Anual</td><td>Anual</td><td>Estima a receita e fixa a despesa. Três orçamentos: fiscal, investimento das estatais e seguridade social</td></tr>
+</table>
+
+<h2>Estágios da despesa (Lei 4.320/64)</h2>
+<div class="flow">EMPENHO (art. 58)  ──►  LIQUIDAÇÃO (art. 63)  ──►  PAGAMENTO (art. 64)
+reserva o crédito       verifica a entrega         ordem de pagamento
+"é vedada despesa       (nota fiscal + atesto      e quitação
+sem prévio empenho"     do fiscal do contrato)
+(art. 60)</div>
+<p><b>Restos a pagar</b> (art. 36): despesa empenhada e não paga até 31/12. São <i>processados</i> quando já liquidados e <i>não processados</i> quando ainda não liquidados.</p>
+
+<div class="box"><b>Por que isso importa para a licitação?</b> Nenhuma contratação é feita sem <b>indicação dos créditos orçamentários</b> (Lei 14.133, art. 150). A LRF exige <b>estimativa de impacto e declaração do ordenador</b> antes de licitar (LRF, art. 16, § 4º).</div>
+
+<h2>Dever de licitar</h2>
+<p><b>CF, art. 37, XXI:</b> obras, serviços, compras e alienações são contratados mediante <b>licitação</b>, que assegure igualdade de condições a todos, <b>ressalvados os casos previstos em lei</b> (contratação direta).<br>
+<b>CF, art. 175:</b> concessão e permissão de serviço público <b>sempre</b> por licitação.<br>
+<b>CF, art. 22, XXVII:</b> só a <b>União</b> edita <b>normas gerais</b>. Estados e municípios regulamentam e editam normas específicas, mas não podem contrariar a lei federal.</p>
+
+<div class="box mt"><span class="tag">MT</span> <b>Lei estadual 10.534/2017</b> mudou por conta própria os valores das modalidades da Lei 8.666 e foi declarada <b>inconstitucional pelo TJ-MT</b> em 2022 (ADI 1005837-70.2022.8.11.0000), por invadir competência da União.</div>
+</div>
+
+<!-- ============ 2 ============ -->
+<div class="section">
+<h1>2. Fundamentos da licitação</h1>
+
+<p><b>Conceito:</b> procedimento administrativo formal para selecionar a <b>proposta mais vantajosa</b>, com <b>isonomia</b> entre os interessados e promovendo o <b>desenvolvimento nacional sustentável</b>.</p>
+
+<h2>Objetivos (art. 11)</h2>
+<ol>
+  <li>Proposta <b>mais vantajosa</b>, considerando o <b>ciclo de vida</b> do objeto. Mais vantajosa não é o mesmo que mais barata.</li>
+  <li><b>Tratamento isonômico</b> e <b>justa competição</b></li>
+  <li><b>Evitar</b> sobrepreço, preços inexequíveis e superfaturamento</li>
+  <li>Incentivar a <b>inovação</b> e o <b>desenvolvimento nacional sustentável</b></li>
+</ol>
+
+<h2>Princípios (art. 5º)</h2>
+<p>Legalidade · impessoalidade · moralidade · publicidade · eficiência · interesse público · probidade administrativa · igualdade · <b>planejamento</b> · <b>transparência</b> · eficácia · <b>segregação de funções</b> · motivação · <b>vinculação ao edital</b> · <b>julgamento objetivo</b> · segurança jurídica · razoabilidade · competitividade · proporcionalidade · celeridade · economicidade · desenvolvimento nacional sustentável · <b>+ LINDB</b> (arts. 20 a 30: considerar as consequências práticas das decisões).</p>
+
+<h2>Agentes (arts. 7º e 8º)</h2>
+<table>
+  <tr><th>Agente</th><th>Quando</th></tr>
+  <tr><td><b>Agente de contratação</b></td><td>Regra. Servidor efetivo ou empregado público permanente</td></tr>
+  <tr><td><b>Pregoeiro</b></td><td>Agente de contratação no pregão</td></tr>
+  <tr><td><b>Comissão de contratação</b> (mínimo de 3 membros)</td><td>Bens e serviços especiais; diálogo competitivo (3 servidores efetivos)</td></tr>
+  <tr><td><b>Equipe de apoio</b></td><td>Auxilia o agente ou pregoeiro</td></tr>
+</table>
+
+<h2>Modalidades (art. 28): escolhidas pelo <u>objeto</u>, não pelo valor</h2>
+<table>
+  <tr><th>Modalidade</th><th>Objeto</th><th>Critérios de julgamento</th></tr>
+  <tr><td><b>Pregão</b></td><td>Bens e serviços <b>comuns</b>: padrões de qualidade objetivamente definidos por especificações usuais de mercado (art. 6º, XIII)</td><td>Menor preço ou maior desconto</td></tr>
+  <tr><td><b>Concorrência</b></td><td>Bens e serviços <b>especiais</b>; <b>obras</b> e serviços de engenharia</td><td>Menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior retorno econômico</td></tr>
+  <tr><td><b>Concurso</b></td><td>Trabalho técnico, científico ou artístico</td><td>Melhor técnica ou conteúdo artístico (prêmio ou remuneração)</td></tr>
+  <tr><td><b>Leilão</b></td><td>Alienação de imóveis e de móveis inservíveis ou apreendidos</td><td>Maior lance</td></tr>
+  <tr><td><b>Diálogo competitivo</b></td><td>Inovação, quando a Administração não consegue definir a solução sozinha</td><td>Definido no edital, após os diálogos</td></tr>
+</table>
+<div class="box warn"><b>Não cabe pregão</b> (art. 29, parágrafo único) para serviços técnicos especializados de natureza predominantemente intelectual nem para obras e serviços de engenharia, <b>exceto serviços comuns de engenharia</b>. <b>É vedado</b> criar novas modalidades ou combinar as existentes (art. 28, § 2º).</div>
+
+<h2>Critérios de julgamento (art. 33)</h2>
+<p>Menor preço · maior desconto · melhor técnica ou conteúdo artístico · <b>técnica e preço</b> (no máximo 70% de peso para a técnica, art. 36, § 2º) · maior lance · maior retorno econômico.</p>
+</div>
+
+<!-- ============ 3 ============ -->
+<div class="section">
+<h1>3. Fase preparatória: planejar a contratação</h1>
+
+<div class="flow">PCA ──► DFD ──► ETP ──► Riscos ──► TR / Projeto básico ──► Pesquisa de preços
+──► Minuta de edital e contrato ──► Parecer jurídico (art. 53) ──► Autorização</div>
+
+<table>
+  <tr><th>Documento</th><th>O que é</th></tr>
+  <tr><td><b>PCA</b>: Plano de Contratações Anual (art. 12, VII)</td><td>Consolida as demandas do ano a partir dos DFDs; subsidia a LOA; publicado em site oficial</td></tr>
+  <tr><td><b>DFD</b>: Documento de Formalização da Demanda</td><td>A área requisitante diz <i>do que precisa e por quê</i></td></tr>
+  <tr><td><b>ETP</b>: Estudo Técnico Preliminar (art. 6º, XX; art. 18, § 1º)</td><td>Analisa o problema e escolhe a <b>melhor solução</b>; conclui se a contratação é viável</td></tr>
+  <tr><td><b>Matriz de riscos</b> (art. 22)</td><td>Aloca os riscos entre as partes. <b>Obrigatória</b> em grande vulto e em contratação integrada ou semi-integrada</td></tr>
+  <tr><td><b>TR</b>: Termo de Referência (art. 6º, XXIII)</td><td>Define objeto, requisitos, execução, gestão, medição, pagamento e seleção do fornecedor</td></tr>
+  <tr><td><b>Projeto básico</b> (art. 6º, XXV)</td><td>Equivalente ao TR para <b>obras e serviços de engenharia</b></td></tr>
+</table>
+
+<h2>Elementos do ETP (art. 18, § 1º). ★ = obrigatório (§ 2º)</h2>
+<div class="cols"><div>
+<ol>
+  <li>★ Descrição da <b>necessidade</b></li>
+  <li>Previsão no PCA</li>
+  <li>Requisitos da contratação</li>
+  <li>★ Estimativa das <b>quantidades</b></li>
+  <li>Levantamento de mercado</li>
+  <li>★ Estimativa do <b>valor</b></li>
+  <li>Descrição da solução como um todo</li>
+</ol></div><div>
+<ol start="8">
+  <li>★ Justificativa do <b>parcelamento</b> ou não</li>
+  <li>Resultados pretendidos</li>
+  <li>Providências prévias</li>
+  <li>Contratações correlatas</li>
+  <li>Impactos ambientais</li>
+  <li>★ <b>Posicionamento conclusivo</b> sobre a viabilidade</li>
+</ol></div></div>
+
+<h2>Pesquisa de preços (art. 23, § 1º; IN SEGES/ME 65/2021)</h2>
+<ol>
+  <li><b>Painel de preços / PNCP</b> (mediana)</li>
+  <li><b>Contratações similares</b> da Administração no último <b>1 ano</b></li>
+  <li>Mídia especializada, tabelas oficiais, sites de domínio amplo</li>
+  <li><b>Pesquisa direta com no mínimo 3 fornecedores</b>, com solicitação formal e justificativa da escolha</li>
+  <li>Base nacional de <b>notas fiscais eletrônicas</b></li>
+</ol>
+<p class="small">Boa prática: priorizar as fontes públicas (1 e 2), descartar valores inexequíveis ou excessivos e documentar data, fonte e método.</p>
+
+<div class="box"><b>Marca:</b> em regra, vedada. Pode ser indicada excepcionalmente, com justificativa, para padronização, compatibilidade ou como referência ("ou equivalente"), conforme o art. 41.<br>
+<b>Parcelamento:</b> é a regra, porque amplia a competição. <b>Fracionamento</b> para fugir da licitação é ilegal.</div>
+
+<div class="box mt"><span class="tag">MT</span> <b>Lei 11.360/2021</b> e art. 20 da 14.133: bens de <b>qualidade comum</b>, vedados <b>artigos de luxo</b> e bebida alcoólica.<br>
+<span class="tag">MT</span> <b>Lei 12.148/2023</b>: no Estado, grande vulto é acima de <b>R$ 50 milhões</b>.</div>
+</div>
+
+<!-- ============ 4 ============ -->
+<div class="section">
+<h1>4. Fase externa: do edital à homologação</h1>
+
+<div class="flow">Divulgação ─► Propostas e lances ─► JULGAMENTO ─► HABILITAÇÃO ─► Recursal (única) ─► Homologação
+(art. 17. A habilitação pode vir antes do julgamento, por ato motivado: § 1º)
+Forma preferencialmente ELETRÔNICA. A presencial deve ser motivada e gravada em áudio e vídeo (§ 2º).</div>
+
+<h2>Divulgação (art. 54)</h2>
+<p><b>PNCP</b> (obrigatório) + <b>extrato</b> no Diário Oficial e em jornal diário de grande circulação (§ 1º). Facultativamente, no site do órgão.</p>
+
+<h2>Prazos mínimos para propostas (art. 55), em dias úteis</h2>
+<table>
+  <tr><th>Situação</th><th>Prazo</th></tr>
+  <tr><td>Bens, menor preço ou maior desconto</td><td class="num">8</td></tr>
+  <tr><td>Bens, demais critérios</td><td class="num">15</td></tr>
+  <tr><td>Serviços comuns e obras/serviços comuns de engenharia, menor preço ou maior desconto</td><td class="num">10</td></tr>
+  <tr><td>Serviços especiais e obras/serviços especiais de engenharia, menor preço ou maior desconto</td><td class="num">25</td></tr>
+  <tr><td>Contratação integrada</td><td class="num">60</td></tr>
+  <tr><td>Contratação semi-integrada e demais casos de serviços e obras</td><td class="num">35</td></tr>
+  <tr><td>Maior lance</td><td class="num">15</td></tr>
+  <tr><td>Técnica e preço; melhor técnica ou conteúdo artístico</td><td class="num">35</td></tr>
+</table>
+
+<h2>Modos de disputa (art. 56)</h2>
+<p><b>Aberto</b> (lances públicos e sucessivos) · <b>Fechado</b> (propostas sigilosas) · <b>Combinados</b>. É vedado o modo fechado <i>isolado</i> no menor preço e no maior desconto, e vedado o modo aberto na técnica e preço.</p>
+
+<h2>Julgamento</h2>
+<ul>
+  <li><b>Negociação</b> com o primeiro colocado (art. 61)</li>
+  <li><b>Desclassificação</b> (art. 59): vícios insanáveis, desconformidade com o edital, preço acima do orçamento, inexequibilidade. Em <b>obras e serviços de engenharia</b>, é inexequível a proposta <b>abaixo de 75%</b> do orçado (§ 4º)</li>
+  <li><b>Orçamento sigiloso</b> é possível, com justificativa (art. 24), mas nunca para os órgãos de controle</li>
+</ul>
+
+<h2>Desempate (art. 60)</h2>
+<div class="flow">0. Empate ficto ME/EPP (LC 123, art. 44): até 10% acima, ou 5% no pregão
+1. Disputa final   2. Desempenho contratual   3. Equidade entre homens e mulheres   4. Programa de integridade
+Persistindo (§ 1º): empresas do Estado do órgão ► brasileiras ► P&D no País ► mitigação climática</div>
+
+<h2>Microempresas e empresas de pequeno porte (LC 123/06; <span class="tag">MT</span> LC 605/2018)</h2>
+<ul>
+  <li>Licitação <b>exclusiva</b> para ME/EPP em itens de até <b>R$ 80 mil</b></li>
+  <li><b>Regularidade fiscal tardia</b>: 5 dias úteis, prorrogáveis, para regularizar</li>
+  <li><b>Subcontratação</b> de ME/EPP e <b>cota reservada</b> de até 25% em bens divisíveis</li>
+</ul>
+
+<h2>Habilitação (arts. 62 a 70)</h2>
+<table>
+  <tr><th>Jurídica</th><th>Técnica</th><th>Fiscal, social e trabalhista</th><th>Econômico-financeira</th></tr>
+  <tr><td>Atos constitutivos</td><td>Atestados, registro profissional</td><td>CNDs, FGTS, CNDT</td><td>Balanço, índices, certidão de falência</td></tr>
+</table>
+<p class="small">Apenas o primeiro colocado apresenta os documentos. Depois da entrega, só se admitem novos documentos em <b>diligência</b> (art. 64). <span class="tag">MT</span> CE-MT, art. 129, XI: comprovar a regularidade previdenciária e trabalhista.</p>
+
+<h2>Encerramento (art. 71), registro de preços (arts. 82 a 86) e impugnação (art. 164)</h2>
+<ul>
+  <li>A autoridade pode <b>sanear</b>, <b>revogar</b> (conveniência, fato superveniente), <b>anular</b> (ilegalidade insanável) ou <b>adjudicar e homologar</b>.</li>
+  <li><b>Ata de registro de preços:</b> 1 ano, prorrogável por igual período. <b>"Carona":</b> até 50% por órgão aderente e até o dobro do registrado no total.</li>
+  <li><b>Impugnação:</b> qualquer pessoa, até <b>3 dias úteis antes</b> da abertura. Resposta em até 3 dias úteis.</li>
+</ul>
+</div>
+
+<!-- ============ 5 ============ -->
+<div class="section">
+<h1>5. Contratação direta</h1>
+
+<table>
+  <tr><th></th><th>Inexigibilidade (art. 74)</th><th>Dispensa (art. 75)</th></tr>
+  <tr><td><b>Lógica</b></td><td>Competição <b>inviável</b></td><td>Competição possível, mas a lei <b>dispensa</b></td></tr>
+  <tr><td><b>Rol</b></td><td>Exemplificativo</td><td>Taxativo</td></tr>
+</table>
+
+<h2>Instrução obrigatória do processo (art. 72)</h2>
+<div class="cols"><div>
+<ol>
+  <li>DFD / ETP / TR ou projeto (quando cabíveis)</li>
+  <li>Estimativa de despesa (art. 23)</li>
+  <li>Pareceres jurídico e técnico</li>
+  <li>Demonstração dos recursos orçamentários</li>
+</ol></div><div>
+<ol start="5">
+  <li>Comprovação da habilitação do contratado</li>
+  <li><b>Razão da escolha</b> do contratado</li>
+  <li><b>Justificativa de preço</b></li>
+  <li>Autorização da autoridade competente</li>
+</ol></div></div>
+<p class="small">O ato que autoriza a contratação direta é divulgado em sítio eletrônico oficial.</p>
+
+<h2>Inexigibilidade (art. 74)</h2>
+<ul>
+  <li><b>I:</b> fornecedor ou representante <b>exclusivo</b></li>
+  <li><b>II:</b> <b>artista</b> consagrado pela crítica ou pela opinião pública</li>
+  <li><b>III:</b> serviços técnicos especializados de natureza <b>predominantemente intelectual</b> com profissional ou empresa de <b>notória especialização</b>. <b>Vedada para publicidade e divulgação</b></li>
+  <li><b>IV:</b> <b>credenciamento</b></li>
+  <li><b>V:</b> compra ou locação de <b>imóvel</b> cujas características tornem necessária a escolha</li>
+</ul>
+
+<h2>Dispensa por valor (art. 75, I e II), valores de 2026</h2>
+<table>
+  <tr><th>Hipótese</th><th>Valor original</th><th>Valor em 2026</th></tr>
+  <tr><td>I: obras, serviços de engenharia, manutenção de veículos</td><td>R$ 100.000,00</td><td class="num">R$ 130.984,20</td></tr>
+  <tr><td>II: demais compras e serviços</td><td>R$ 50.000,00</td><td class="num">R$ 65.492,11</td></tr>
+</table>
+<div class="box"><b>Como somar (§ 1º):</b> todo o valor gasto <b>no exercício</b> pela <b>unidade gestora</b> com objetos da <b>mesma natureza</b> (mesmo ramo de atividade).<br>
+<b>Dispensa eletrônica (§ 3º):</b> aviso por pelo menos <b>3 dias úteis</b> para receber propostas adicionais.</div>
+
+<h2>Outras hipóteses de dispensa</h2>
+<ul>
+  <li><b>III:</b> licitação <b>deserta ou fracassada</b> há menos de 1 ano, mantidas as condições do edital</li>
+  <li><b>VIII:</b> <b>emergência ou calamidade</b>: contrato de no máximo <b>1 ano</b>, <b>vedadas a prorrogação e a recontratação</b> da mesma empresa</li>
+  <li><b>IX:</b> entidade da própria Administração criada para esse fim · <b>XV:</b> instituição de pesquisa, ensino ou desenvolvimento institucional</li>
+</ul>
+
+<div class="box warn"><b>Fracionamento:</b> dividir a despesa para ficar abaixo do limite de dispensa. Exemplo: R$ 40 mil em janeiro + R$ 35 mil em março em material de limpeza = R$ 75 mil, acima de R$ 65.492,11. <b>É irregular e pode ser crime</b> (CP, art. 337-E). A solução é planejar (PCA) e usar o registro de preços.<br>
+<b>Emergência fabricada</b> pela falta de planejamento não justifica a dispensa.</div>
+<div class="box mt"><span class="tag">MT</span> O <b>TCE-MT</b> verifica a legalidade de dispensas e inexigibilidades (LC 269/2007, art. 1º, V).</div>
+</div>
+
+<!-- ============ 6 ============ -->
+<div class="section">
+<h1>6. Contrato administrativo</h1>
+
+<ul>
+  <li><b>Formal e escrito</b>. O contrato verbal só é admitido em pequenas compras de pronto pagamento até <b>R$ 13.098,41</b> (2026)</li>
+  <li>Publicação no <b>PNCP</b> é <b>condição de eficácia</b> do contrato e dos aditivos (art. 94)</li>
+  <li>Cláusulas necessárias (art. 92): objeto, vinculação ao edital, regime de execução, preço, pagamento, <b>reajuste</b>, prazos, <b>crédito orçamentário</b>, garantias, penalidades, extinção, matriz de riscos...</li>
+</ul>
+
+<h2>Prerrogativas da Administração (art. 104)</h2>
+<p>Modificar e extinguir <b>unilateralmente</b> · <b>fiscalizar</b> · <b>aplicar sanções</b> · <b>ocupar provisoriamente</b> bens e pessoal. As cláusulas <b>econômico-financeiras</b> não mudam sem concordância do contratado (§ 1º).</p>
+
+<h2>Duração</h2>
+<table>
+  <tr><th>Tipo</th><th>Prazo</th></tr>
+  <tr><td>Regra</td><td>Vigência do crédito orçamentário</td></tr>
+  <tr><td><b>Serviços e fornecimentos contínuos</b></td><td>Até <b>5 anos</b> (art. 106), prorrogáveis até <b>10 anos</b> (art. 107)</td></tr>
+  <tr><td>Contratos que geram receita ou economia</td><td>Até 10 anos sem investimento; até 35 anos com investimento (art. 110)</td></tr>
+</table>
+
+<h2>Garantias (arts. 96 a 102)</h2>
+<p>Exigência facultativa, prevista no edital. O <b>contratado escolhe</b> a modalidade: caução, <b>seguro-garantia</b> ou fiança bancária. Até <b>5%</b> do valor, ou <b>10%</b> com justificativa. Obras de grande vulto: seguro-garantia de até <b>30%</b> com cláusula de retomada (art. 99).</p>
+
+<h2>Alterações (arts. 124 e 125)</h2>
+<table>
+  <tr><th>Unilaterais</th><th>Por acordo</th></tr>
+  <tr><td>Qualitativas (projeto, especificações) e quantitativas. Limite de <b>25%</b>, ou <b>50%</b> em acréscimos para reforma</td><td>Substituir a garantia, mudar o regime de execução ou a forma de pagamento, <b>restabelecer o equilíbrio econômico-financeiro</b></td></tr>
+</table>
+
+<table>
+  <tr><th>Instituto</th><th>Quando se aplica</th></tr>
+  <tr><td><b>Reajuste</b></td><td>Por índice, após 1 ano da data do orçamento</td></tr>
+  <tr><td><b>Repactuação</b></td><td>Serviços com dedicação exclusiva de mão de obra (variação de custos, como a convenção coletiva)</td></tr>
+  <tr><td><b>Reequilíbrio</b></td><td>Fato imprevisível, ou previsível de consequências incalculáveis</td></tr>
+</table>
+
+<h2>Gestão e fiscalização (art. 117)</h2>
+<p><b>Fiscal:</b> acompanha a execução, registra ocorrências e <b>atesta a entrega</b>, o que fundamenta a <b>liquidação</b>. <b>Gestor:</b> coordena, cuida de prazos, aditivos e sanções. A designação é formal e exige capacitação.</p>
+
+<h2>Extinção (arts. 137 a 139)</h2>
+<p>Unilateral · consensual · judicial ou arbitral. O contratado pode pedir a extinção, entre outros casos, se houver <b>atraso de pagamento superior a 2 meses</b> (art. 137, § 2º, IV).</p>
+</div>
+
+<!-- ============ 7 ============ -->
+<div class="section">
+<h1>7. Recursos, sanções e crimes</h1>
+
+<h2>Recursos (arts. 165 a 168)</h2>
+<table>
+  <tr><th>Instrumento</th><th>Cabimento</th><th>Prazo</th></tr>
+  <tr><td><b>Recurso</b></td><td>Julgamento, habilitação, anulação ou revogação, extinção unilateral do contrato, pré-qualificação ou registro cadastral</td><td class="num">3 dias úteis</td></tr>
+  <tr><td>Contrarrazões</td><td>Resposta ao recurso de outro licitante</td><td class="num">3 dias úteis</td></tr>
+  <tr><td><b>Pedido de reconsideração</b></td><td>Ato do qual não cabe recurso hierárquico</td><td class="num">3 dias úteis</td></tr>
+  <tr><td>Recurso contra <b>advertência, multa ou impedimento</b></td><td>Aplicação da sanção (art. 166)</td><td class="num">15 dias úteis</td></tr>
+  <tr><td>Reconsideração contra <b>inidoneidade</b></td><td>Declaração de inidoneidade (art. 167)</td><td class="num">15 dias úteis</td></tr>
+</table>
+<p class="small">No julgamento e na habilitação, a <b>intenção de recorrer</b> deve ser manifestada <b>imediatamente</b>, sob pena de preclusão, e o recurso é apreciado em <b>fase única</b>. O recurso tem <b>efeito suspensivo</b> (art. 168).</p>
+
+<h2>Infrações (art. 155) e sanções (art. 156)</h2>
+<table>
+  <tr><th>Sanção</th><th>Para quê</th><th>Alcance</th><th>Prazo / valor</th></tr>
+  <tr><td><b>Advertência</b></td><td>Inexecução parcial leve</td><td>—</td><td>—</td></tr>
+  <tr><td><b>Multa</b></td><td>Qualquer infração</td><td>—</td><td class="num">0,5% a 30% do contrato</td></tr>
+  <tr><td><b>Impedimento</b> de licitar e contratar</td><td>Inexecução com dano, não manter a proposta, não assinar, retardar etc.</td><td>Só o <b>ente</b> que aplicou</td><td class="num">até 3 anos</td></tr>
+  <tr><td><b>Declaração de inidoneidade</b></td><td>Documento falso, fraude, ato lesivo da Lei 12.846 etc.</td><td><b>Todos os entes</b></td><td class="num">3 a 6 anos</td></tr>
+</table>
+<p class="small">Exige processo com ampla defesa. Registro no CEIS/CNEP em até 15 dias úteis (art. 161). A reabilitação é possível (art. 163).</p>
+
+<div class="box mt"><span class="tag">MT</span> <b>CEIS/MT</b> (Lei 9.312/2010): cadastro estadual de empresas inidôneas ou suspensas, mantido pela CGE-MT · <b>TCE-MT</b> declara inidôneo por <b>até 5 anos</b> quem fraudar licitação (LC 269/2007, art. 41) · <b>Termo Anticorrupção</b> exigido de quem recebe recursos estaduais (Lei 10.744/2018).</div>
+
+<h2>Crimes em licitações (Código Penal, arts. 337-E a 337-P)</h2>
+<table>
+  <tr><th>Art.</th><th>Conduta</th><th>Pena</th></tr>
+  <tr><td>337-E</td><td>Contratação direta fora das hipóteses legais</td><td>Reclusão, 4 a 8 anos + multa</td></tr>
+  <tr><td>337-F</td><td>Frustrar ou fraudar o caráter competitivo</td><td>Reclusão, 4 a 8 anos + multa</td></tr>
+  <tr><td>337-G</td><td>Patrocínio de interesse privado</td><td>Reclusão, 6 meses a 3 anos + multa</td></tr>
+  <tr><td>337-H</td><td>Modificação ou pagamento irregular em contrato</td><td>Reclusão, 4 a 8 anos + multa</td></tr>
+  <tr><td>337-I</td><td>Perturbar ato de processo licitatório</td><td>Detenção, 6 meses a 3 anos + multa</td></tr>
+  <tr><td>337-J</td><td>Violar sigilo de proposta</td><td>Detenção, 2 a 3 anos + multa</td></tr>
+  <tr><td>337-K</td><td>Afastar licitante por violência, ameaça ou vantagem</td><td>Reclusão, 3 a 5 anos + multa</td></tr>
+  <tr><td>337-L</td><td>Fraude em licitação ou contrato</td><td>Reclusão, 4 a 8 anos + multa</td></tr>
+  <tr><td>337-M</td><td>Admitir licitante inidôneo</td><td>Reclusão, 1 a 3 anos + multa</td></tr>
+  <tr><td>337-N</td><td>Impedir indevidamente inscrição em registro cadastral</td><td>Reclusão, 6 meses a 2 anos + multa</td></tr>
+  <tr><td>337-O</td><td>Omitir ou modificar levantamento cadastral</td><td>Reclusão, 6 meses a 3 anos + multa</td></tr>
+</table>
+</div>
+
+<!-- ============ 8 ============ -->
+<div class="section">
+<h1>8. Lei de Responsabilidade Fiscal (LC 101/2000)</h1>
+
+<p><b>Art. 1º, § 1º:</b> gestão fiscal responsável é a <b>ação planejada e transparente</b> que <b>previne riscos</b> e <b>corrige desvios</b> capazes de afetar o equilíbrio das contas públicas. Vale para <b>todos os Poderes e órgãos</b> de <b>todos os entes</b>.</p>
+
+<table>
+  <tr><th>Planejamento</th><th>Transparência</th><th>Controle</th><th>Responsabilização</th></tr>
+  <tr><td>PPA, LDO (metas e riscos fiscais), LOA</td><td>RREO, RGF, audiências, tempo real</td><td>Tribunal de Contas, controle interno, Legislativo</td><td>Sanções institucionais, crimes, improbidade</td></tr>
+</table>
+
+<h2>LRF e licitação (arts. 15 a 17)</h2>
+<div class="box">Criar, expandir ou aperfeiçoar ação que aumente a despesa exige: (1) <b>estimativa do impacto</b> orçamentário-financeiro no exercício e nos <b>2 seguintes</b>; e (2) <b>declaração do ordenador</b> de adequação com a LOA e compatibilidade com o PPA e a LDO.<br>
+Isso é <b>condição prévia para empenho e licitação</b> (art. 16, § 4º, I). Sem isso, a despesa é <b>não autorizada, irregular e lesiva</b> (art. 15).<br>
+<b>Despesa obrigatória de caráter continuado</b> (art. 17): obriga por <b>mais de 2 exercícios</b> e exige compensação.</div>
+
+<h2>Despesa com pessoal (arts. 19 e 20), em % da Receita Corrente Líquida</h2>
+<div class="cols"><div>
+<table>
+  <tr><th>Estado</th><th>%</th></tr>
+  <tr><td>Executivo</td><td>49%</td></tr>
+  <tr><td>Legislativo (incluído o TCE)</td><td>3%</td></tr>
+  <tr><td>Judiciário</td><td>6%</td></tr>
+  <tr><td>Ministério Público</td><td>2%</td></tr>
+  <tr><td><b>Total</b></td><td><b>60%</b></td></tr>
+</table></div><div>
+<table>
+  <tr><th>Município</th><th>%</th></tr>
+  <tr><td>Executivo</td><td>54%</td></tr>
+  <tr><td>Legislativo</td><td>6%</td></tr>
+  <tr><td><b>Total</b></td><td><b>60%</b></td></tr>
+</table>
+<p class="small">União: 50%.</p></div></div>
+
+<div class="flow">  90% do limite ──────── 95% do limite ──────── 100% do limite
+  ALERTA do TCE           PRUDENCIAL               EXCESSO
+  (art. 59, § 1º, II)     (art. 22, par. único)    (art. 23)</div>
+<ul>
+  <li><b>Prudencial (95%):</b> vedados aumentos e reajustes (salvo revisão geral e decisão judicial), criação de cargos, mudança de carreira, admissões (salvo reposição em educação, saúde e segurança) e <b>horas extras</b></li>
+  <li><b>Excesso:</b> eliminar em <b>2 quadrimestres</b>, pelo menos <b>1/3 no primeiro</b>. Se não conseguir, ficam bloqueadas as transferências voluntárias, as garantias e as operações de crédito</li>
+</ul>
+
+<h2>Fim de mandato <span class="small">(<span class="tag">MT</span> LC 677/2020: o governador que sai declara ter cumprido estas regras)</span></h2>
+<table>
+  <tr><th>Regra</th><th>Período</th></tr>
+  <tr><td>Nulo o ato que aumente a despesa com pessoal (art. 21)</td><td><b>180 dias</b> finais do mandato</td></tr>
+  <tr><td>Vedado contrair obrigação que não possa ser cumprida no mandato, ou com parcelas no ano seguinte <b>sem caixa</b> (art. 42)</td><td><b>Últimos 2 quadrimestres</b></td></tr>
+  <tr><td>Vedada operação de crédito por antecipação de receita (ARO) (art. 38, IV, b)</td><td><b>Último ano</b> do mandato</td></tr>
+</table>
+
+<h2>Relatórios</h2>
+<p><b>RREO</b> (execução orçamentária): <b>bimestral</b> · <b>RGF</b> (gestão fiscal): <b>quadrimestral</b>, ou semestral para municípios com menos de 50 mil habitantes (art. 63) · audiências públicas quadrimestrais · dados de receita e despesa em <b>tempo real</b> (art. 48-A).</p>
+
+<h2>Crimes contra as finanças públicas (Código Penal, incluídos pela Lei 10.028/2000)</h2>
+<table>
+  <tr><th>Art.</th><th>Conduta</th><th>Pena</th></tr>
+  <tr><td>359-A</td><td>Operação de crédito sem autorização legislativa</td><td>Reclusão, 1 a 2 anos</td></tr>
+  <tr><td>359-B</td><td>Inscrever em restos a pagar despesa não empenhada ou acima do limite</td><td>Detenção, 6 meses a 2 anos</td></tr>
+  <tr><td>359-C</td><td>Assumir obrigação nos 2 últimos quadrimestres sem caixa</td><td>Reclusão, 1 a 4 anos</td></tr>
+  <tr><td>359-D</td><td>Ordenar despesa não autorizada por lei</td><td>Reclusão, 1 a 4 anos</td></tr>
+  <tr><td>359-G</td><td>Aumentar despesa com pessoal nos 180 dias finais</td><td>Reclusão, 1 a 4 anos</td></tr>
+</table>
+
+</div>
+
+<!-- ============ 9 ============ -->
+<div class="section">
+<h1>9. Controle e transparência</h1>
+
+<table>
+  <tr><th>Quem controla</th><th>Quando</th><th>O quê (CF, art. 70)</th></tr>
+  <tr><td><b>Interno</b> (o próprio Poder) · <b>Externo</b> (Legislativo + Tribunal de Contas) · <b>Social</b> (cidadão)</td><td>Prévio · concomitante · posterior</td><td>Legalidade · legitimidade · economicidade</td></tr>
+</table>
+
+<h2>As 3 linhas de defesa (Lei 14.133, art. 169)</h2>
+<div class="flow">3ª LINHA ▸ Órgão central de controle interno (CGE-MT) + Tribunal de Contas (TCE-MT)
+2ª LINHA ▸ Assessoria jurídica + controle interno do próprio órgão
+1ª LINHA ▸ Agentes de contratação, requisitantes, fiscais e autoridades</div>
+<p class="small">Impropriedade formal: sanear e prevenir. Irregularidade com dano: apurar responsabilidades e remeter ao Ministério Público (§ 3º).</p>
+
+<h2>Controle externo: TCE-MT <span class="tag">MT</span></h2>
+<ul>
+  <li><b>7 conselheiros</b>; fiscaliza o <b>Estado e todos os municípios</b> de MT. Junto a ele atua o Ministério Público de Contas (CE-MT, arts. 49 e 51)</li>
+  <li>Emite <b>parecer prévio</b> sobre as contas do Governador e dos Prefeitos e <b>julga</b> as contas dos demais gestores</li>
+  <li>Aplica <b>multas</b>, determina <b>ressarcimento</b> (título executivo) e pode <b>sustar atos</b>. A sustação de <b>contratos</b> cabe à Assembleia</li>
+  <li><b>Termo de Ajustamento de Gestão</b> (TAG). Prescrição da pretensão punitiva em <b>5 anos</b> (Lei 11.599/2021)</li>
+  <li>Qualquer cidadão, partido, associação ou sindicato pode <b>denunciar</b> (CE-MT, art. 54)</li>
+</ul>
+
+<h2>Controle interno: CGE-MT <span class="tag">MT</span></h2>
+<p>LC 550/2014: auditoria, controladoria, correição e ouvidoria. Os responsáveis pelo controle interno devem comunicar irregularidades ao TCE, sob pena de <b>responsabilidade solidária</b> (CE-MT, art. 52, § 1º). Programa de Integridade Pública (Lei 10.691/2018).</p>
+
+<h2>Lei de Acesso à Informação (Lei 12.527/2011)</h2>
+<ul>
+  <li><b>Publicidade é a regra; sigilo é a exceção</b> (art. 3º, I)</li>
+  <li><b>Transparência ativa</b> (art. 8º): divulgar sem pedido, inclusive <b>licitações, editais, resultados e contratos</b></li>
+  <li><b>Transparência passiva</b>: qualquer interessado pode pedir, <b>sem justificar</b>. Resposta em até <b>20 dias</b>, prorrogáveis por mais <b>10</b> (art. 11)</li>
+</ul>
+
+<h2>PNCP: Portal Nacional de Contratações Públicas (art. 174)</h2>
+<p>Portal obrigatório e único: PCAs, editais, atas de registro de preços, contratos, aditivos e notas fiscais. Também oferece o <b>painel de preços</b> para pesquisa.</p>
+
+<h2>Transparência em MT <span class="tag">MT</span></h2>
+<table>
+  <tr><th>Norma</th><th>Obrigação</th></tr>
+  <tr><td>Lei 9.562/2011</td><td>Publicar na internet a íntegra dos contratos estaduais</td></tr>
+  <tr><td>Lei 12.069/2023</td><td>Divulgar as notas fiscais eletrônicas emitidas para o Estado</td></tr>
+  <tr><td>Lei 11.160/2020</td><td>Transparência dos contratos emergenciais da pandemia</td></tr>
+  <tr><td>Lei 13.353/2026</td><td>Divulgar a execução dos acordos de leniência</td></tr>
+  <tr><td>CE-MT, art. 129, § 10</td><td>Certidões de atos e contratos em até 15 dias</td></tr>
+</table>
+</div>
+
+<!-- ============ 10 ============ -->
+<div class="section">
+<h1>10. Quadro-resumo: Mato Grosso</h1>
+<table>
+  <tr><th>Tema</th><th>Norma de MT</th><th>Em uma frase</th></tr>
+  <tr><td>Grande vulto</td><td>Lei 12.148/2023</td><td>Acima de R$ 50 milhões, contra R$ 262 milhões no âmbito federal</td></tr>
+  <tr><td>Valores de licitação</td><td>Lei 10.534/2017</td><td>Declarada inconstitucional pelo TJ-MT: Estado não altera norma geral</td></tr>
+  <tr><td>Desempate</td><td>Lei 10.803/2019</td><td>Preferência a bens e empresas de MT (feita para a 8.666; ver art. 60, § 1º, da 14.133)</td></tr>
+  <tr><td>ME/EPP</td><td>LC 605/2018 e Lei 10.442/2016</td><td>Estatuto estadual: exclusividade até R$ 80 mil, empate ficto, subcontratação</td></tr>
+  <tr><td>Artigos de luxo</td><td>Lei 11.360/2021</td><td>Vedada a compra de itens de luxo e de bebida alcoólica</td></tr>
+  <tr><td>Sessões presenciais</td><td>Lei 10.851/2019</td><td>Gravação em vídeo e transmissão no Portal da Transparência</td></tr>
+  <tr><td>Integridade</td><td>Leis 10.691/2018 e 10.744/2018</td><td>Programa de Integridade Pública; Termo Anticorrupção</td></tr>
+  <tr><td>Empresas punidas</td><td>Lei 9.312/2010</td><td>CEIS/MT, mantido pela CGE-MT</td></tr>
+  <tr><td>Agricultura familiar</td><td>Lei 10.638/2017</td><td>Política estadual de compras da agricultura familiar</td></tr>
+  <tr><td>Tribunal de Contas</td><td>CE-MT, arts. 46 a 56; LC 269/2007</td><td>Inidoneidade até 5 anos; TAG; denúncia por qualquer cidadão</td></tr>
+  <tr><td>Prescrição no TCE</td><td>Lei 11.599/2021</td><td>5 anos</td></tr>
+  <tr><td>Controle interno</td><td>LC 295/2007; LC 550/2014</td><td>Sistema integrado; Controladoria-Geral do Estado</td></tr>
+  <tr><td>Transição de governo</td><td>LC 677/2020</td><td>Comissão com técnicos do TCE; declarações de cumprimento da LRF</td></tr>
+  <tr><td>Teto de gastos</td><td>EC 81/2017</td><td>Limites por Poder corrigidos pelo IPCA, 5 exercícios a partir de 2018</td></tr>
+  <tr><td>Habilitação</td><td>CE-MT, art. 129, XI</td><td>Exige regularidade previdenciária e trabalhista</td></tr>
+</table>
+
+<h1 style="margin-top:14pt">11. Comparativo: Lei 8.666/93 × Lei 14.133/21</h1>
+<table>
+  <tr><th>Tema</th><th>Lei 8.666/93 (revogada)</th><th>Lei 14.133/21</th></tr>
+  <tr><td>Modalidades</td><td>Concorrência, tomada de preços, convite, concurso, leilão (+ pregão e RDC)</td><td>Pregão, concorrência, concurso, leilão, diálogo competitivo</td></tr>
+  <tr><td>Escolha da modalidade</td><td>Pelo <b>valor</b></td><td>Pelo <b>objeto</b></td></tr>
+  <tr><td>"Tipos" / critérios</td><td>Menor preço, melhor técnica, técnica e preço, maior lance</td><td>+ maior desconto, maior retorno econômico, conteúdo artístico</td></tr>
+  <tr><td>Ordem das fases</td><td>Habilitação antes do julgamento</td><td>Julgamento antes da habilitação</td></tr>
+  <tr><td>Condução</td><td>Comissão de licitação</td><td>Agente de contratação / pregoeiro</td></tr>
+  <tr><td>Recursos</td><td>A cada fase</td><td>Fase recursal única</td></tr>
+  <tr><td>Planejamento</td><td>Projeto básico</td><td>PCA, ETP, TR, matriz de riscos</td></tr>
+  <tr><td>Publicidade</td><td>Diário Oficial e jornal</td><td>PNCP + extrato no DO e em jornal</td></tr>
+  <tr><td>Dispensa por valor</td><td>R$ 33 mil (engenharia) / R$ 17,6 mil</td><td>R$ 130.984,20 / R$ 65.492,11 (2026)</td></tr>
+  <tr><td>Contratos contínuos</td><td>Até 60 meses</td><td>Até 5 anos, prorrogáveis até 10</td></tr>
+  <tr><td>Sanções</td><td>Suspensão até 2 anos; inidoneidade</td><td>Impedimento até 3 anos; inidoneidade de 3 a 6 anos</td></tr>
+  <tr><td>Crimes</td><td>Na própria lei (arts. 89 a 99)</td><td>No Código Penal (arts. 337-E a 337-P), com penas maiores</td></tr>
+</table>
+</div>
+
+<!-- ============ 12 ============ -->
+<div class="section">
+<h1>12. Atividades do curso</h1>
+
+<h2>Atividade 1: Administração direta e indireta (Encontro 1)</h2>
+<table>
+  <tr><th>Instituição</th><th>Classificação</th><th>Lei de licitações</th></tr>
+  <tr><td>Secretaria de Estado de Saúde de MT</td><td></td><td></td></tr>
+  <tr><td>DETRAN-MT</td><td></td><td></td></tr>
+  <tr><td>Banco do Brasil</td><td></td><td></td></tr>
+  <tr><td>UNEMAT</td><td></td><td></td></tr>
+  <tr><td>Caixa Econômica Federal</td><td></td><td></td></tr>
+  <tr><td>Câmara Municipal de Cuiabá</td><td></td><td></td></tr>
+</table>
+
+<h2>Estudo de caso: 200 computadores para as escolas (Encontro 2)</h2>
+<p>A Secretaria Municipal de Educação de um município de MT quer equipar 10 laboratórios com <b>200 computadores</b>. Há R$ 800 mil na LOA.</p>
+<ol>
+  <li>Qual é o problema a resolver? Que soluções alternativas existem (comprar, alugar, comodato...)?</li>
+  <li>Quais elementos obrigatórios o ETP deve conter?</li>
+  <li>Comprar em lote único ou parcelar? Por quê?</li>
+  <li>Quais fontes usar na pesquisa de preços?</li>
+  <li>Qual modalidade e qual critério de julgamento?</li>
+  <li>Liste 3 riscos e quem deve assumi-los.</li>
+</ol>
+<div class="notes"><div></div><div></div><div></div><div></div><div></div></div>
+
+<h2>Análise de edital real (entrega em 28/11, vale 30%)</h2>
+<ol>
+  <li>Acesse <b>pncp.gov.br</b> → "Editais e avisos" e escolha um edital de <b>órgão de Mato Grosso</b></li>
+  <li>Relatório de 2 a 3 páginas, individual ou em dupla:
+    <ul>
+      <li>Órgão, objeto, modalidade e critério de julgamento</li>
+      <li>Elementos do edital (art. 25) e do ETP/TR, se publicados</li>
+      <li>Exigências de habilitação (arts. 62 a 70)</li>
+      <li>Um ponto que considere restritivo ou questionável, e por quê</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>Simulação de pregão (Encontro 3)</h2>
+<p><b>Objeto:</b> 500 cadeiras escolares · <b>Estimativa:</b> R$ 90.000 · <b>Critério:</b> menor preço por item. Papéis: pregoeiro, equipe de apoio, licitantes e auditores do TCE-MT.</p>
+<p>Anote: valor final ______________ · Houve empate ficto de ME/EPP? ☐ sim ☐ não · Houve recurso? ☐ sim ☐ não</p>
+<div class="notes"><div></div><div></div><div></div></div>
+</div>
+
+<!-- ============ 13 ============ -->
+<div class="section">
+<h1>13. Siglas e links úteis</h1>
+<div class="cols"><div>
+<table>
+  <tr><th>Sigla</th><th>Significado</th></tr>
+  <tr><td>ARO</td><td>Operação de crédito por antecipação de receita</td></tr>
+  <tr><td>CEIS / CNEP</td><td>Cadastros de empresas inidôneas e suspensas / punidas</td></tr>
+  <tr><td>CGE-MT</td><td>Controladoria-Geral do Estado de MT</td></tr>
+  <tr><td>DFD</td><td>Documento de Formalização da Demanda</td></tr>
+  <tr><td>ETP</td><td>Estudo Técnico Preliminar</td></tr>
+  <tr><td>LAI</td><td>Lei de Acesso à Informação</td></tr>
+  <tr><td>LDO / LOA</td><td>Lei de Diretrizes Orçamentárias / Orçamentária Anual</td></tr>
+  <tr><td>LINDB</td><td>Lei de Introdução às Normas do Direito Brasileiro</td></tr>
+  <tr><td>LRF</td><td>Lei de Responsabilidade Fiscal (LC 101/2000)</td></tr>
+  <tr><td>ME / EPP / MEI</td><td>Microempresa / Empresa de Pequeno Porte / Microempreendedor Individual</td></tr>
+</table></div><div>
+<table>
+  <tr><th>Sigla</th><th>Significado</th></tr>
+  <tr><td>PCA</td><td>Plano de Contratações Anual</td></tr>
+  <tr><td>PNCP</td><td>Portal Nacional de Contratações Públicas</td></tr>
+  <tr><td>PPA</td><td>Plano Plurianual</td></tr>
+  <tr><td>RCL</td><td>Receita Corrente Líquida</td></tr>
+  <tr><td>RDC</td><td>Regime Diferenciado de Contratações (revogado)</td></tr>
+  <tr><td>RGF</td><td>Relatório de Gestão Fiscal</td></tr>
+  <tr><td>RREO</td><td>Relatório Resumido da Execução Orçamentária</td></tr>
+  <tr><td>SRP</td><td>Sistema de Registro de Preços</td></tr>
+  <tr><td>TAG</td><td>Termo de Ajustamento de Gestão</td></tr>
+  <tr><td>TCE-MT</td><td>Tribunal de Contas do Estado de MT</td></tr>
+  <tr><td>TR</td><td>Termo de Referência</td></tr>
+</table></div></div>
+
+<h2>Links</h2>
+<table>
+  <tr><th>Onde</th><th>Endereço</th></tr>
+  <tr><td>Portal Nacional de Contratações Públicas</td><td>pncp.gov.br</td></tr>
+  <tr><td>Lei 14.133/2021 (texto compilado)</td><td>planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm</td></tr>
+  <tr><td>LRF (texto compilado)</td><td>planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm</td></tr>
+  <tr><td>Compras do Governo Federal (normas e manuais)</td><td>gov.br/compras</td></tr>
+  <tr><td>Tribunal de Contas de MT</td><td>tce.mt.gov.br</td></tr>
+  <tr><td>Controladoria-Geral de MT</td><td>controladoria.mt.gov.br</td></tr>
+  <tr><td>Legislação de MT (Assembleia Legislativa)</td><td>al.mt.gov.br</td></tr>
+  <tr><td>Portal da Transparência de MT</td><td>transparencia.mt.gov.br</td></tr>
+</table>
+
+<h2>Anotações</h2>
+<div class="notes"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+
+</body>
+</html>
