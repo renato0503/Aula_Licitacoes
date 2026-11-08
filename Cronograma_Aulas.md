@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 1 | Sáb 07/11 | 8h | CP1 completo + CP2 completo |
 | 2 | Dom 08/11 | 3h | CP3 — fase preparatória (planejamento) |
-| — | 09/11 a 27/11 | — | Atividade entre encontros (análise de edital real) |
+| — | 09/11 a 29/11 | — | Atividade entre encontros (análise de edital real) |
 | 3 | Sáb 28/11 | 8h | CP3 — fase externa, pregão, contratação direta, contrato, recursos e sanções |
 | 4 | Dom 29/11 | 3h | CP4 — LRF, controle e LAI + avaliação final |
 
@@ -57,7 +57,7 @@
 | 09:45–10:45 | **Estudo de caso**: "A Secretaria Municipal de Educação precisa comprar 200 computadores." Em grupos: definir modalidade, critério de julgamento, documentos da fase preparatória, riscos |
 | 10:45–11:00 | **Orientação da atividade entre encontros** |
 
-### Atividade entre encontros (09/11 a 27/11)
+### Atividade entre encontros (09/11 a 29/11)
 Cada aluno/grupo escolhe um **edital real no PNCP** (pncp.gov.br) e entrega um relatório curto (2–3 páginas):
 1. Órgão, objeto, modalidade e critério de julgamento
 2. Identificar os elementos do edital (art. 25) e do ETP/TR
