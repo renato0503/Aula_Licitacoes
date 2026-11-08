@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atividades do Encontro 2 — Licitações e LRF</title>
+<meta name="description" content="Orientações e entrega individual das atividades do Encontro 2: estudo de caso e análise de edital real.">
+<style>
+  :root{
+    --ink:#1d2733;
+    --petrol:#0f4c5c;
+    --petrol-dark:#0a3945;
+    --turquoise:#14919b;
+    --sand:#f6f4ef;
+    --line:#dfe3e6;
+    --field:#8a979e;
+    --muted:#5c6a72;
+    --error:#a4262c;
+    --error-bg:#fdf0f0;
+    --warn-bg:#fff6dd;
+    --warn-line:#e3c56b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",Calibri,Arial,sans-serif;color:var(--ink);background:var(--sand);line-height:1.6}
+  a{color:var(--petrol)}
+  .wrap{max-width:820px;margin:0 auto;padding:0 16px}
+  header{background:linear-gradient(135deg,var(--petrol-dark),var(--petrol) 55%,var(--turquoise));color:#fff;padding:40px 0 36px}
+  header a{color:#fff}
+  .back{font-size:.9rem}
+  header h1{margin:10px 0 6px;font-size:2rem;line-height:1.2;letter-spacing:-.5px}
+  header .sub{font-size:1.05rem;opacity:.92;margin:0 0 20px}
+  .tags{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0}
+  .tags li{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:4px 12px;font-size:.85rem}
+  main.wrap{padding:28px 16px 56px}
+  section,.panel{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px 24px;margin:0 0 20px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  h2{font-size:1.35rem;line-height:1.3;color:var(--petrol);margin:0 0 10px}
+  .eyebrow{display:block;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--turquoise)}
+  h3{font-size:1.02rem;line-height:1.35;color:var(--petrol);margin:26px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+  p{margin:0 0 12px}
+  ol.how{margin:0;padding-left:22px}
+  ol.how li{margin-bottom:6px}
+  .case{border-left:4px solid var(--turquoise);background:#eef7f8;padding:12px 16px;margin:0 0 14px;border-radius:0 6px 6px 0}
+  .field{margin:0 0 16px}
+  label,legend,.label{display:block;font-weight:600;font-size:.95rem;margin:0 0 4px;padding:0}
+  fieldset{border:0;padding:0;margin:0 0 16px;min-width:0}
+  .hint{display:block;font-size:.86rem;color:var(--muted);margin:-2px 0 6px}
+  input[type=text],input[type=email],input[type=url],select,textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid var(--field);border-radius:6px;padding:9px 11px}
+  textarea{min-height:104px;resize:vertical}
+  textarea.short{min-height:72px}
+  .choice{display:flex;gap:8px;align-items:flex-start;font-weight:400;margin:0 0 6px}
+  .choice input{margin-top:6px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+  .risk{display:grid;grid-template-columns:3fr 2fr;gap:0 16px}
+  .notice{padding:12px 16px;border-radius:6px;margin:0 0 14px}
+  .notice.warn{background:var(--warn-bg);border:1px solid var(--warn-line)}
+  .notice.error{background:var(--error-bg);border:1px solid var(--error);color:var(--error)}
+  .submit-row{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center}
+  button{font:inherit;font-weight:600;border-radius:6px;padding:11px 22px;cursor:pointer;border:1px solid var(--petrol);background:var(--petrol);color:#fff}
+  button:hover:not(:disabled){background:var(--petrol-dark)}
+  button:disabled{opacity:.55;cursor:not-allowed}
+  button.secondary{background:#fff;color:var(--petrol)}
+  button.secondary:hover{background:#eef7f8}
+  #rascunho{font-size:.86rem;color:var(--muted)}
+  .protocol{font-size:1.6rem;font-weight:700;letter-spacing:.03em;color:var(--petrol);margin:0 0 12px;overflow-wrap:anywhere}
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--turquoise);outline-offset:1px}
+  [hidden]{display:none!important}
+  footer{border-top:1px solid var(--line);padding:20px 0 36px;color:var(--muted);font-size:.86rem}
+  @media (max-width:600px){
+    header h1{font-size:1.65rem}
+    section,.panel{padding:18px 16px}
+    .two,.risk{grid-template-columns:1fr}
+    button{width:100%}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="back" href="../index.html">← Página do curso</a>
+    <h1>Atividades do Encontro 2</h1>
+    <p class="sub">Licitações e Lei de Responsabilidade Fiscal — Prof. Renato Rosa</p>
+    <ul class="tags">
+      <li>Individual</li>
+      <li>2 atividades, 1 envio</li>
+      <li>Entrega até 27/11/2026</li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="panel" id="sucesso" tabindex="-1" hidden>
+    <h2>Entrega recebida</h2>
+    <p>Guarde o número do seu protocolo:</p>
+    <p class="protocol" id="protocolo"></p>
+    <p id="sucesso-detalhe"></p>
+    <button type="button" class="secondary" id="corrigir">Corrigir e reenviar</button>
+  </div>
+
+  <form id="formulario" novalidate>
+
+    <section>
+      <h2>Como fazer</h2>
+      <ol class="how">
+        <li>Faça as duas atividades <strong>individualmente</strong>, com as suas próprias palavras. Todos os campos são obrigatórios.</li>
+        <li>Pode preencher aos poucos: o rascunho fica salvo neste navegador até você enviar.</li>
+        <li>Ao terminar, clique em <strong>Enviar as duas atividades</strong> e guarde o protocolo. Se precisar corrigir, envie novamente: todos os envios ficam registrados e o mais recente é identificado.</li>
+      </ol>
+      <p style="margin:12px 0 0">Consulte a <a href="https://github.com/renato0503/Aula_Licitacoes/blob/main/legislacao/Lei-14133-2021-Licitacoes-e-Contratos.md" target="_blank" rel="noopener">Lei 14.133/2021</a> e os <a href="../slides/Encontro2_Dom_08-11.pdf" target="_blank" rel="noopener">slides do encontro</a>.</p>
+    </section>
+
+    <section>
+      <h2>Identificação</h2>
+      <div class="two">
+        <div class="field">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required maxlength="200" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required maxlength="200" autocomplete="email">
+        </div>
+      </div>
+    </section>
+
+    <section id="atividade-1">
+      <span class="eyebrow">Atividade 1</span>
+      <h2>Estudo de caso: 200 computadores para as escolas</h2>
+      <div class="case">A <strong>Secretaria Municipal de Educação de um município de MT</strong> quer equipar 10 laboratórios de informática com <strong>200 computadores</strong>. Orçamento disponível na LOA: <strong>R$ 800 mil</strong>.</div>
+      <p>Coloque-se no lugar de quem planeja essa contratação e responda às perguntas abaixo.</p>
+
+      <h3>1. O problema e a solução</h3>
+      <div class="field">
+        <label for="a1_problema">Qual é o problema que precisa ser resolvido?</label>
+        <textarea id="a1_problema" name="a1_problema" required maxlength="8000"></textarea>
+      </div>
+      <div class="field">
+        <label for="a1_alternativas">Existem soluções alternativas? Quais?</label>
+        <textarea id="a1_alternativas" name="a1_alternativas" required maxlength="8000"></textarea>
+      </div>
+      <div class="field">
+        <label for="a1_solucao">Qual solução você escolhe e por quê?</label>
+        <textarea id="a1_solucao" name="a1_solucao" required maxlength="8000"></textarea>
+      </div>
+
+      <h3>2. Estudo Técnico Preliminar</h3>
+      <div class="field">
+        <label for="a1_elementos_etp">Que elementos obrigatórios o ETP precisa ter?</label>
+        <span class="hint">Art. 18, §§ 1º e 2º, da Lei 14.133/2021.</span>
+        <textarea id="a1_elementos_etp" name="a1_elementos_etp" required maxlength="8000"></textarea>
+      </div>
+
+      <h3>3. Parcelamento</h3>
+      <fieldset>
+        <legend>Comprar tudo num lote só ou parcelar?</legend>
+        <label class="choice"><input type="radio" name="a1_parcelamento" value="Lote único" required> Lote único</label>
+        <label class="choice"><input type="radio" name="a1_parcelamento" value="Parcelar"> Parcelar em itens ou lotes</label>
+      </fieldset>
+      <div class="field">
+        <label for="a1_parcelamento_justificativa">Por quê?</label>
+        <textarea id="a1_parcelamento_justificativa" name="a1_parcelamento_justificativa" required maxlength="8000"></textarea>
+      </div>
+
+      <h3>4. Pesquisa de preços</h3>
+      <div class="field">
+        <label for="a1_fontes_precos">Quais fontes usar na pesquisa de preços?</label>
+        <textarea id="a1_fontes_precos" name="a1_fontes_precos" required maxlength="8000"></textarea>
+      </div>
+
+      <h3>5. Modalidade e critério de julgamento</h3>
+      <div class="two">
+        <div class="field">
+          <label for="a1_modalidade">Modalidade</label>
+          <select id="a1_modalidade" name="a1_modalidade" required>
+            <option value="">Selecione</option>
+            <option>Pregão</option>
+            <option>Concorrência</option>
+            <option>Concurso</option>
+            <option>Leilão</option>
+            <option>Diálogo competitivo</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="a1_criterio">Critério de julgamento</label>
+          <select id="a1_criterio" name="a1_criterio" required>
+            <option value="">Selecione</option>
+            <option>Menor preço</option>
+            <option>Maior desconto</option>
+            <option>Melhor técnica ou conteúdo artístico</option>
+            <option>Técnica e preço</option>
+            <option>Maior lance</option>
+            <option>Maior retorno econômico</option>
+          </select>
+        </div>
+      </div>
+
+      <h3>6. Riscos</h3>
+      <p>Liste 3 riscos e diga quem deve assumir cada um.</p>
+      <div class="risk">
+        <div class="field">
+          <label for="a1_risco1">Risco 1</label>
+          <input type="text" id="a1_risco1" name="a1_risco1" required maxlength="1000">
+        </div>
+        <div class="field">
+          <label for="a1_risco1_responsavel">Quem assume o risco 1</label>
+          <input type="text" id="a1_risco1_responsavel" name="a1_risco1_responsavel" required maxlength="300">
+        </div>
+        <div class="field">
+          <label for="a1_risco2">Risco 2</label>
+          <input type="text" id="a1_risco2" name="a1_risco2" required maxlength="1000">
+        </div>
+        <div class="field">
+          <label for="a1_risco2_responsavel">Quem assume o risco 2</label>
+          <input type="text" id="a1_risco2_responsavel" name="a1_risco2_responsavel" required maxlength="300">
+        </div>
+        <div class="field">
+          <label for="a1_risco3">Risco 3</label>
+          <input type="text" id="a1_risco3" name="a1_risco3" required maxlength="1000">
+        </div>
+        <div class="field">
+          <label for="a1_risco3_responsavel">Quem assume o risco 3</label>
+          <input type="text" id="a1_risco3_responsavel" name="a1_risco3_responsavel" required maxlength="300">
+        </div>
+      </div>
+      <div class="field">
+        <label for="a1_mitigacao">Escolha um desses riscos e explique como mitigá-lo.</label>
+        <textarea id="a1_mitigacao" name="a1_mitigacao" required maxlength="8000"></textarea>
+      </div>
+    </section>
+
+    <section id="atividade-2">
+      <span class="eyebrow">Atividade 2 · vale 30% da nota</span>
+      <h2>Análise de edital real</h2>
+      <ol class="how">
+        <li>Acesse o <a href="https://pncp.gov.br/app/editais" target="_blank" rel="noopener">PNCP (pncp.gov.br) → Editais e avisos</a>.</li>
+        <li>Escolha um edital de <strong>órgão de Mato Grosso</strong>, estadual ou municipal.</li>
+        <li>Leia o edital e os anexos e preencha as informações abaixo.</li>
+      </ol>
+
+      <h3>Identificação do edital</h3>
+      <div class="field">
+        <label for="a2_link">Link do edital no PNCP</label>
+        <input type="url" id="a2_link" name="a2_link" required maxlength="1000" placeholder="https://pncp.gov.br/...">
+      </div>
+      <div class="field">
+        <label for="a2_orgao">Órgão</label>
+        <input type="text" id="a2_orgao" name="a2_orgao" required maxlength="500">
+      </div>
+      <div class="field">
+        <label for="a2_objeto">Objeto</label>
+        <textarea id="a2_objeto" name="a2_objeto" class="short" required maxlength="8000"></textarea>
+      </div>
+      <div class="two">
+        <div class="field">
+          <label for="a2_modalidade">Modalidade</label>
+          <input type="text" id="a2_modalidade" name="a2_modalidade" required maxlength="300">
+        </div>
+        <div class="field">
+          <label for="a2_criterio">Critério de julgamento</label>
+          <input type="text" id="a2_criterio" name="a2_criterio" required maxlength="300">
+        </div>
+      </div>
+
+      <h3>Elementos do edital e do planejamento</h3>
+      <div class="field">
+        <label for="a2_elementos_edital">Elementos do edital (art. 25)</label>
+        <span class="hint">Objeto; regras de convocação, julgamento, habilitação, recursos e penalidades; fiscalização e gestão do contrato; entrega do objeto e condições de pagamento. Indique o que encontrou e o que faltou.</span>
+        <textarea id="a2_elementos_edital" name="a2_elementos_edital" required maxlength="8000"></textarea>
+      </div>
+      <div class="field">
+        <label for="a2_etp_tr">Elementos do ETP e do TR</label>
+        <span class="hint">Se não foram publicados, escreva "não publicados".</span>
+        <textarea id="a2_etp_tr" name="a2_etp_tr" required maxlength="8000"></textarea>
+      </div>
+
+      <h3>Exigências de habilitação (arts. 62 a 70)</h3>
+      <p class="hint">Se o edital não fizer alguma exigência, escreva "não exige".</p>
+      <div class="field">
+        <label for="a2_hab_juridica">Habilitação jurídica (art. 66)</label>
+        <textarea id="a2_hab_juridica" name="a2_hab_juridica" class="short" required maxlength="8000"></textarea>
+      </div>
+      <div class="field">
+        <label for="a2_hab_tecnica">Habilitação técnica (art. 67)</label>
+        <textarea id="a2_hab_tecnica" name="a2_hab_tecnica" class="short" required maxlength="8000"></textarea>
+      </div>
+      <div class="field">
+        <label for="a2_hab_fiscal">Habilitação fiscal, social e trabalhista (art. 68)</label>
+        <textarea id="a2_hab_fiscal" name="a2_hab_fiscal" class="short" required maxlength="8000"></textarea>
+      </div>
+      <div class="field">
+        <label for="a2_hab_economica">Habilitação econômico-financeira (art. 69)</label>
+        <textarea id="a2_hab_economica" name="a2_hab_economica" class="short" required maxlength="8000"></textarea>
+      </div>
+
+      <h3>Análise crítica</h3>
+      <div class="field">
+        <label for="a2_ponto">Um ponto que você considera restritivo ou questionável</label>
+        <textarea id="a2_ponto" name="a2_ponto" class="short" required maxlength="8000"></textarea>
+      </div>
+      <div class="field">
+        <label for="a2_ponto_porque">Por quê?</label>
+        <textarea id="a2_ponto_porque" name="a2_ponto_porque" required maxlength="8000"></textarea>
+      </div>
+    </section>
+
+    <section>
+      <div class="notice warn" id="sem-endpoint" hidden>O envio ainda não foi habilitado pelo professor. Você já pode preencher: o rascunho fica salvo neste navegador.</div>
+      <div class="notice error" id="erro" role="alert" hidden></div>
+      <div class="submit-row">
+        <button type="submit" id="enviar">Enviar as duas atividades</button>
+        <span id="rascunho" role="status"></span>
+      </div>
+    </section>
+  </form>
+</main>
+
+<footer>
+  <div class="wrap">Prof. Renato Rosa · Curso Licitações e Lei de Responsabilidade Fiscal</div>
+</footer>
+
+<script>
+  // URL /exec do App da Web publicado a partir de apps-script/Encontro2.gs.
+  const ENDPOINT = '';
+  const CHAVE_RASCUNHO = 'licitacoes-encontro2-rascunho-v1';
+  const TEXTO_BOTAO = 'Enviar as duas atividades';
+
+  const form = document.getElementById('formulario');
+  const botao = document.getElementById('enviar');
+  const avisoRascunho = document.getElementById('rascunho');
+  const caixaErro = document.getElementById('erro');
+  const painelSucesso = document.getElementById('sucesso');
+
+  const novoId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 12);
+  let envioId = novoId();
+  let enviando = false;
+  let tentativaFeita = false;
+  let temporizador;
+
+  function salvarRascunho() {
+    try {
+      localStorage.setItem(CHAVE_RASCUNHO, JSON.stringify(Object.fromEntries(new FormData(form))));
+      const hora = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+      avisoRascunho.textContent = 'Rascunho salvo às ' + hora;
+    } catch (e) {
+      avisoRascunho.textContent = 'Não foi possível salvar o rascunho neste navegador.';
+    }
+  }
+
+  function apagarRascunho() {
+    try { localStorage.removeItem(CHAVE_RASCUNHO); } catch (e) {}
+  }
+
+  function restaurarRascunho() {
+    let salvo = null;
+    try { salvo = JSON.parse(localStorage.getItem(CHAVE_RASCUNHO)); } catch (e) {}
+    if (!salvo) return;
+    Object.keys(salvo).forEach(function (nome) {
+      const campo = form.elements[nome];
+      if (campo) campo.value = salvo[nome];
+    });
+    avisoRascunho.textContent = 'Rascunho recuperado.';
+  }
+
+  function mostrarErro(mensagem) {
+    caixaErro.textContent = mensagem;
+    caixaErro.hidden = false;
+  }
+
+  function camposValidos() {
+    Array.from(form.elements).forEach(function (campo) {
+      const emBranco = campo.required && campo.type !== 'radio' && !campo.value.trim();
+      if (campo.setCustomValidity) campo.setCustomValidity(emBranco ? 'Preencha este campo.' : '');
+    });
+    return form.reportValidity();
+  }
+
+  function concluirEnvio(resposta, nome) {
+    apagarRascunho();
+    envioId = novoId();
+    tentativaFeita = false;
+    avisoRascunho.textContent = '';
+    document.getElementById('protocolo').textContent = resposta.protocolo;
+    document.getElementById('sucesso-detalhe').textContent =
+      nome + ', suas duas atividades foram gravadas' +
+      (resposta.dataHora ? ' em ' + resposta.dataHora : '') +
+      ' (envio nº ' + resposta.versao + ').';
+    form.hidden = true;
+    painelSucesso.hidden = false;
+    painelSucesso.focus();
+    window.scrollTo(0, 0);
+  }
+
+  async function enviar(evento) {
+    evento.preventDefault();
+    if (enviando || !ENDPOINT) return;
+    caixaErro.hidden = true;
+    if (!camposValidos()) return;
+
+    enviando = true;
+    tentativaFeita = true;
+    botao.disabled = true;
+    botao.textContent = 'Enviando…';
+
+    const dados = Object.fromEntries(new FormData(form));
+    dados.envioId = envioId;
+
+    try {
+      // text/plain evita a requisição prévia de CORS, que o Apps Script não atende.
+      const http = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(dados),
+        signal: AbortSignal.timeout(60000)
+      });
+      const resposta = await http.json();
+      if (resposta.ok) {
+        concluirEnvio(resposta, dados.nome.trim());
+      } else {
+        const lista = resposta.campos ? ' ' + resposta.campos.join('; ') + '.' : '';
+        mostrarErro(resposta.erro + lista + ' Suas respostas continuam nesta página.');
+      }
+    } catch (e) {
+      mostrarErro('Não foi possível confirmar o envio. Verifique sua conexão e clique em enviar novamente. Suas respostas continuam nesta página.');
+    } finally {
+      enviando = false;
+      botao.disabled = false;
+      botao.textContent = TEXTO_BOTAO;
+    }
+  }
+
+  form.addEventListener('input', function (evento) {
+    if (evento.target.setCustomValidity) evento.target.setCustomValidity('');
+    // Conteúdo alterado depois de uma tentativa é um novo envio, não uma repetição.
+    if (tentativaFeita) { envioId = novoId(); tentativaFeita = false; }
+    clearTimeout(temporizador);
+    temporizador = setTimeout(salvarRascunho, 400);
+  });
+  form.addEventListener('submit', enviar);
+
+  document.getElementById('corrigir').addEventListener('click', function () {
+    painelSucesso.hidden = true;
+    form.hidden = false;
+    window.scrollTo(0, 0);
+  });
+
+  restaurarRascunho();
+  if (!ENDPOINT) {
+    document.getElementById('sem-endpoint').hidden = false;
+    botao.disabled = true;
+  }
+</script>
+</body>
+</html>
